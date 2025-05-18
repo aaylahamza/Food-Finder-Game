@@ -38,7 +38,7 @@ def display_grid():
     grid[py, px] = [0, 255, 0]
 
     plt.imshow(grid.astype(np.uint8))
-    plt.xticks([]);
+    plt.xticks([])
     plt.yticks([])
     plt.title(f"Steps: {st.session_state.steps}/{MAX_STEPS}")
     st.pyplot(plt.gcf())
